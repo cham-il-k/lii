@@ -1,0 +1,10 @@
+/*Arrow Image
+*/
+.arrow {
+    width:4rem;
+    margin-top: .5rem;
+    @media #{$break-narrow}{
+        display: none
+    }
+
+}

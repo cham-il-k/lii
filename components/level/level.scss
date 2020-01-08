@@ -1,0 +1,29 @@
+.level-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  .diff {
+    flex: 1 1 30%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    .level-item {
+      flex: 1 1 50%;
+      margin: 1rem;
+
+      label {
+        text-align: center;
+        padding: 1rem 2rem;
+        color: brown;
+      }
+
+      &.fast-choice {
+        outline: 2px solid white;
+      }
+      &.qtt-choice {
+        outline: 2px solid burlywood;
+      }
+    }
+  }
+}

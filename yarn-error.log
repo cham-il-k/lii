@@ -1,0 +1,34 @@
+Arguments: 
+  /home/kash/.nvm/versions/node/v12.13.1/bin/node /usr/share/yarn/bin/yarn.js add react-dom react
+
+PATH: 
+  /home/kash/.nvm/versions/node/v12.13.1/bin:/home/kash/.local/bin:/usr/local/bin:/opt/Postman:/opt/containerd/bin:/opt/firefox:/opt/flutter/bin:/opt/and/bin:/home/kash/.nvm/versions/node/v12.13.1/bin:/home/kash/.local/bin:/usr/local/bin:/opt/Postman:/opt/containerd/bin:/opt/firefox:/opt/flutter/bin:/opt/and/bin:/home/kash/.nvm/versions/node/v12.13.1/bin:/home/kash/.local/bin:/usr/local/bin:/opt/Postman:/opt/containerd/bin:/opt/firefox:/opt/flutter/bin:/opt/and/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games
+
+Yarn version: 
+  1.21.1
+
+Node version: 
+  12.13.1
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: getaddrinfo EAI_AGAIN registry.yarnpkg.com
+      at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:60:26)
+
+npm manifest: 
+  {
+    "name": "ismai",
+    "version": "1.0.0",
+    "description": "isman",
+    "main": "index.js",
+    "author": "cham <kazdhicham@gmal.com>",
+    "license": "MIT"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
