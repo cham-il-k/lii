@@ -1,5 +1,6 @@
-/node_modules
+node_modules/*
 /coran.json
 /*.lock
-/dist/
-/.cache/
+dist/*
+.cache/*
+# comment
