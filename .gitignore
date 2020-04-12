@@ -1,0 +1,5 @@
+/node_modules
+/coran.json
+/*.lock
+/dist/
+/.cache/
