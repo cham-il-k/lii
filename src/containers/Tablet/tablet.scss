@@ -1,0 +1,21 @@
+@import './../variables';
+
+.tablet{
+     height: auto;
+     width: 100%;
+     padding: 2rem;
+     display: flex; 
+     background-color:$c-orange;
+     border-radius: 1rem;
+     margin: 1rem ;
+     .check {
+          label {
+               font: 1rem 'Fira Sans', sans-serif;
+           }
+           
+           input {
+               margin: .4rem;
+           }
+     }
+     
+}

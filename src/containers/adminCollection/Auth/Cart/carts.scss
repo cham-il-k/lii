@@ -1,0 +1,60 @@
+.carts {
+  color: rgba(35, 87, 80, 0.658);
+  overflow-x: hidden;
+  text-align: center;
+  margin: 0 auto;
+  
+   
+ #timeline ul li {
+  list-style: none;
+  position: relative;
+  width: 2px;
+  margin: 0 auto;
+  padding-top: 1rem;
+  background-color: #709c9c;
+  /**Dots */
+ .show {
+  transform: none;
+  visibility: visible;
+  opacity: 1;
+  }
+}
+#timeline ul li:nth-child(odd) div {
+  left: 40px;
+  transform: translateX(200px, 0);
+}
+ #timeline ul li:nth-child(even) div {
+  left: -440px;
+  transform: translateX(-200px, 0);
+}
+ ul li:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 25px;
+  height: 25px;
+  background-color: inherit;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  transition: all 0.5s ease-in-out;
+}
+}
+@media (max-width: 900px) {
+  .carts #timeline ul li div {
+    width: 250px;
+  }
+}
+@media (max-width: 600px) {
+  .carts #timeline ul li {
+    margin-left: 15px;
+  }
+  .carts #timeline ul li div {
+    width: calc(100vw - 90px);
+  }
+  .carts #timeline ul li:nth-child(even) div {
+    left: 40px;
+  }
+}
+
+/*# sourceMappingURL=carts.css.map */
