@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { greenContour} from './../variables'
+import { greenDense} from './../variables'
 export const MenuItemContainer = styled.div`
 	height: ${(size) => (size ? '380px' : '240px')};
 	min-width: 30%;
@@ -8,7 +8,7 @@ export const MenuItemContainer = styled.div`
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	border: 1px solid ${greenContour};
+	border: 1px solid ${greenDense};
 	margin: 0 7.5px 15px;
 	overflow: hidden;
   border-radius:2px;

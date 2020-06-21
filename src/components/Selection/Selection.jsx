@@ -2,29 +2,30 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { createStructuredSelector } from 'reselect';
 
-import { selectCollections, selectProducts  } from './../../store/selectors/selection';
+import { selectWordsSelected, selectProducts  } from '../../store/selectors/words';
 import MenuItem from '../MenuItem/Menu-Item';
 import { SelectionMenuContainer } from './selection-styled';
+//import FormInput from '../__FormInput/FormInput';
 
 
 class Selection extends Component {
 
   render() {
-    const { collections } = this.props
-      const menus = collections.map(collection =>{
-        const {id , ...otherProps} = collection;
+    const { words } = this.props
+      const menus = words.map(w =>{
+        const {id , ...otherProps} = w;
           return <MenuItem key={id} {...otherProps}></MenuItem>
     })
     return (
       <SelectionMenuContainer>
-        { menus }
+      <div>START</div>
       </SelectionMenuContainer>
     )  
    }  
 }
 
 const mapStateToProps = createStructuredSelector({
-  collections: selectCollections 
+  words: selectWordsSelected 
 })
 
 

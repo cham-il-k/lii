@@ -4,7 +4,7 @@ import './index.scss';
 import {Provider} from 'react-redux'
 import { ConnectedRouter } from 'connected-react-router'
 import { PersistGate } from 'redux-persist/integration/react'
-import App from './App';
+import App from './App.jsx';
 import { store, persistStor } from './store/store'
 import { history } from './store/reducers'
 import * as serviceWorker from './serviceWorker';

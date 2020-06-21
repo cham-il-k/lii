@@ -1,10 +1,10 @@
 import styled, { css } from 'styled-components'
 import {Link} from 'react-router-dom'
-import {blanc, dark_grey,greenAldi,c_overlay} from './../../components/variables'
+import {blanc, back, textBleu, greenGrey,greenFin} from './../../components/variables'
 
 export const FooterContainer = styled.div`
-    background-color: ${dark_grey};
-    color: ${blanc};
+    background-color: ${greenFin};
+    color: ${textBleu};
     padding: 1rem auto;
     font-size: 1.4rem;
     display: flex;
@@ -13,10 +13,10 @@ export const FooterContainer = styled.div`
     justify-content: center;
     align-items: center;
     position:fixe;
-    bottom:0px
+    bottom:0px;
 `
 const buttonStyles = css`
-  background-color: ${greenAldi};
+  background-color: ${greenFin};
   color: white;
   border: none;
 
@@ -68,21 +68,21 @@ export const CustomLinkContainer = styled(Link)`
   `;
 
 export const NavigationContainer = styled.div`
-    background-color: ${dark_grey};
-    color: ${blanc};
+    background-color: ${greenFin};
+    color: ${textBleu};
     padding: 1rem auto;
     font-size: 1.4rem;
      display: flex;
-     flex-direction:column
+     flex-direction:column;
     justify-items: center;
     align-items: center;
-    justify-contents:center;
+    justify-content:center;
     position:absolute;
     bottom:0px;
 `
 
 export const CopyRight = styled.div`
-    background-color: ${dark_grey};
+    background-color: ${greenGrey};
     color: ${blanc};
     padding: 1rem auto;
     font-size: 1.4rem;

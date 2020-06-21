@@ -1,8 +1,9 @@
 import {combineReducers } from 'redux'
 import profilReducer from './profil'
 import cartReducer from './cart'
-import selectionReducer from './selection'
-import shopReducer from './shop'
+import wordsReducer from './words'
+import souraReducer from './soura'
+import ismaiReducer from './ismai'
 import { persistReducer } from 'redux-persist'
 import storage from 'redux-persist/lib/storage'
 import { createBrowserHistory } from 'history'
@@ -18,8 +19,9 @@ const rootReducer = combineReducers(
         router: connectRouter(history),
         profil:profilReducer,
         cart:cartReducer,
-        selection:selectionReducer,
-        shop:shopReducer,
+        words:wordsReducer,
+        soura:souraReducer,
+        ismai:ismaiReducer,
          
     }
 

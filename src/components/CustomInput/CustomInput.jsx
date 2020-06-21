@@ -1,9 +1,9 @@
 import React from 'react';
 
-import { CustomButtonContainer } from './CustomInput.styled';
+import { IsmCustomButtonContainer } from './CustomInput.styled';
 
-const CustomButton = ({ children, ...props }) => (
-  <CustomButtonContainer {...props}>{children}</CustomButtonContainer>
+const IsmCustomButton = ({ children, ...props }) => (
+  <IsmCustomButtonContainer {...props}>{children}</IsmCustomButtonContainer>
 );
 
-export default CustomButton;
+export default IsmCustomButton;

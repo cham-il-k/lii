@@ -4,15 +4,15 @@
 import React from 'react';
 import { setCurrentProfil, selectCurrentProfil } from './../../store/actions/profil'
 import { connect } from 'react-redux'
-import FormInput from '../FormInput/FormInput';
-import CustomButton from '../CustomButton/CustomButton';
+import IsmFormInput from '../IsmFormInput/IsmFormInput';
+import IsmCustomButton from '../IsmCustomButton/IsmCustomButton';
 import { googleSigninStart, signinStart} from '../../store/actions/profil';
 
 import {
   SignInContainer,
   SignInTitle,
   ButtonsBarContainer
-} from './SignIn-styled';
+} from './signIn.styled';
 
 class SignIn extends React.Component {
   state = {
@@ -24,23 +24,6 @@ class SignIn extends React.Component {
     event.preventDefault();
     const { email, password } = this.state;
     signInStart(email, password)  
-    /* try {
-       userRef = await auth.signInWithEmailAndPassword(email, password);
-      if (userRef) {
-        userRef.onSnapshot(snapshot => {
-          setCurrentProfil({
-            id: snapshot.id,
-            ...snapshot.data()
-          })
-        })
-      } else {
-        console.log(`cant set setCurrentProfil or cant connect  ${email}`)
-      }
-    } catch (error) {
-      console.error(error);
-    }
-    this.setState({ email: '', password: '' });
-    this.props.history.push(`/profil/${userRef.user.uid}`) */
   }
   handleChange = event => {
     const { value, name } = event.target;
@@ -54,7 +37,7 @@ class SignIn extends React.Component {
         <SignInTitle>I already have an account</SignInTitle>
         <span>Sign in with your email and password</span>
         <form onSubmit={this.handleSubmit}>
-          <FormInput
+          <IsmFormInput
             name='email'
             type='email'
             handleChange={this.handleChange}
@@ -62,7 +45,7 @@ class SignIn extends React.Component {
             label='email'
             required
           />
-          <FormInput
+          <IsmFormInput
             name='password'
             type='password'
             value={this.state.password}
@@ -71,10 +54,10 @@ class SignIn extends React.Component {
             required
           />
           <ButtonsBarContainer>
-            <CustomButton type='submit'> Sign in </CustomButton>
-            <CustomButton type='button' onClick={googleSigninStart} isGoogleSignIn>
+            <IsmCustomButton type='submit'> Sign in </IsmCustomButton>
+            <IsmCustomButton type='button' onClick={googleSigninStart} isGoogleSignIn>
               Google SignIn 
-            </CustomButton>
+            </IsmCustomButton>
           </ButtonsBarContainer>
         </form>
       </SignInContainer>
