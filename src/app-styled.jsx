@@ -1,8 +1,9 @@
 import styled from 'styled-components'
-import { maxWidth,back, textBlack} from './components/variables'
+import { maxWidth, textBlack} from './components/variables'
 
 export const AppContainer =  styled.div`
-    background-color: ${back};
+    max-width: ${maxWidth};
+    background-color: white;
     color: ${textBlack};
     padding:  0 auto;
     text-align: center;

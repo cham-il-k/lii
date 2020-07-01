@@ -14,29 +14,27 @@ import {
   SearchIcon,
   FormInputSearch,
 } from './ismProgressHeader.styled';
-const IsmProgressHeader = ({ profil, hidden }) => (
+const IsmProgressHeader = () => (
 
   <HeaderContainer>
     <OptionsContainer>
       <OptionLink to='/profil' ><FontAwesomeIcon icon={faHome} />home
         </OptionLink>
       <OptionLink to='/progress' > <FontAwesomeIcon icon={faHashtag} /> progress</OptionLink>
-      <OptionLink to='/program' > <FontAwesomeIcon icon={faBell} />
-        Program</OptionLink>
+      <OptionLink to='/programs' > <FontAwesomeIcon icon={faBell} />
+        Programs</OptionLink>
       <OptionLink as='div'  onClick={() => alert('sign Out')}><FontAwesomeIcon icon={faEnvelope} />Messages 
       </OptionLink>
       <OptionLink as='div'  onClick={() => alert('sign Out')}><FontAwesomeIcon icon={faSignOutAlt} />Logout 
       </OptionLink>
     </OptionsContainer>
     <SearchBar>
-                    <SearchIcon icon={faSearch} />
-                    <FormInputSearch />
+        <SearchIcon icon={faSearch} onClick={() => alert('search in progress')}/>
+        <FormInputSearch />
       </SearchBar>
                     
   </HeaderContainer>
 );
 
-const mapStateToProps = createStructuredSelector({
-  });
 
-export default connect(mapStateToProps)(IsmProgressHeader);
+export default IsmProgressHeader;
